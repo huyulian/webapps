@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="js/js.js"></script>
+	<title>页面</title>
+</head>
+<body>
+  <div id="big">
+   <!--logo-->
+  	<div class="logo">
+  	  <img src="messages/log.png" height="78px" width="350px" alt="星际">
+  	</div>
+  	<!--礼包时间-->
+  	<div class="time">
+  		礼包有效期：2015.11.26——2015.12.31
+  	</div>
+  	<!--兑换码-->
+  	<div class="dh">
+  	  <p>请输入兑换码：</p>
+  	  <input type="text" value="AFHSDG123ASD12S12332" onclick="this.value=''">
+  	  <button id="button" onclick="tk()">确定</button>
+  	</div>
+
+  	<!--弹框-->
+  	<div class="tk-background" id="tangk">
+  
+		<div class="tk" >
+		  <span class="p-one">请填写PSNID：</span>
+		  <input type="text">
+		  <span class="p-two">再次填写PSNID：</span>
+		  <input type="text">
+		  <span class="p-two">请填写手机号：</span>
+		  <input type="text">
+		  <button>确定</button>
+		  <!--exit-->
+		 <div class="exit" onclick="exit()" >
+		  <img src="messages/exit.png" height="56px" height="56px" alt="exit">
+		 </div>
+		</div>
+	<div>
+  </div>
+
+</body>									
+</html>
