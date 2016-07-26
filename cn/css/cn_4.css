@@ -1,0 +1,14 @@
+.content {width: 2.8rem;  margin: 1.65rem auto 0.8rem auto;}
+.content input {width: 2.655rem; height: 0.34rem; line-height: 0.34rem; border:0.005rem solid #a0832b; color: #a0832b; font-size: 0.15rem; background-color: #362e2b; padding-left: 0.135rem; outline: none;}
+.button1 {width: 100%; height: 0.35rem; background: url(../images/apply.png); background-size: 100%; margin-top: 0.19rem; display: block;}
+.content h1 {font-size:0.16rem; font-weight: bold; color: #fab736; height: 0.25rem;  border-bottom: 0.01rem solid #fab736; margin-top: 0.24rem;}
+.desc {width: 100%; margin-top: 5%;}
+.character {width:0.37rem; height: 0.37rem; margin-left: 0.07rem; float: left;}
+.text {font-size: 0.15rem; font-weight: bold; color: #d76323; margin-left: 0.13rem; float: left;}
+.text span {font-size: 0.13rem; color: #b86c21; font-weight: normal;}
+.check {width: 0.485rem; height: 0.485rem; margin-left: 0.6rem;}
+.reminder {margin-left: 0.08rem; height: 0.16rem; margin-top: -0.8rem; }
+.reminder img {width: 0.135rem; height: 0.135rem; float: left;}
+.reminder span {font-size: 0.13rem; color: #d76323; display: block; float: left;margin-left: 0.04rem;}
+.button2 {width: 100%; height: 0.35rem; display: block; background: url(../images/cn4_return.png); background-size: 100%; margin-top: 7.6%; }
+.tip {margin-top: 0.14rem;font-size: 0.3rem;color: #8a3f38;margin-left: 0.09rem;}

@@ -1,0 +1,17 @@
+.content {width: 2.8rem; margin: 2rem auto 0.5rem auto;}
+.student {font-size: 0.16rem; font-weight: bold; color: #fab736;  height: 0.27rem; border-bottom: 0.01rem solid #fab736;}
+.sutdent-desc {width: 100%;}
+.sutdent-desc li {width: 100%; height: 0.53rem; border-bottom: 0.005rem dashed #9a6f24;}
+.sutdent-desc li img {width: 0.37rem; height: 0.37rem; margin-left: 0.09rem; margin-top: 0.08rem; float: left; }
+.title {font-size: 0.15rem; font-weight: bold; color: #d76323; display: block; margin-left: 0.12rem; margin-top: 0.08rem; float: left;}
+.title span {font-size: 0.13rem; color: #b86c21;}
+.accept {display: block; width: 0.74rem; height: 0.26rem; line-height:0.26rem; background: url(../images/accept.jpg); background-size: 100%; float: left; margin-top: 0.13rem; margin-left: 0.43rem; font-size: 0.13rem; color: #57200c; text-align: center; padding-left: 0.15rem; -webkit-appearance: none; }
+.own {margin-top: 8%;}
+.li-last {border-bottom: none !important;}
+.button {width: 100%; height: 0.35rem; margin-top: 0.27rem;}
+.button1 {display: block; width: 1.33rem; height: 0.35rem; background: url(../images/return.jpg);  background-size: 100%; float: left;}
+.button2 {display: block; width: 1.33rem; height: 0.35rem; background: url(../images/look.jpg); background-size: 100%; float: left; margin-left: 0.14rem; }
+.teacher {width: 100%; margin-top: 0.2rem; height: 0.87rem;}
+.teacher h1 {font-size: 0.16rem; font-weight: bold; color: #fab736;}
+.teacher input {width: 2.655rem; height: 0.34rem; line-height: 0.34rem; border:0.005rem solid #a0832b; color: #a0832b; font-size: 0.15rem; background-color: #362e2b; margin-top: 0.11rem; padding-left: 0.135rem; outline: none; display: block;}
+.tip {margin-top: 0.14rem;font-size: 0.3rem;color: #8a3f38;margin-left: 0.09rem;}

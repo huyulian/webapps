@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta charset="UTF-8">
+	<title>新师徒</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/cn_5.css">
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<a href="javascript:;" >
+			<img src="../images/logo.png" class="logo">
+		</a>
+		<div class="content">
+			<h1 class="student">我的师傅</h1>
+			<ul class="sutdent-desc" id="teacher"></ul>
+
+			<h1 class="student own">我的同门</h1>
+			<p class="tip hide" id="tip1">还没有同门</p>
+			<ul class="sutdent-desc" id="schoolMate"></ul>
+			<div class="button">
+				<a href="javascript:;" class="button1" onclick="window.location.href='cn_4.html'"></a>
+				<a href="javascript:;" class="button2"></a>
+			</div>
+			<div class="teacher">
+				<h1>师傅资格码</h1>
+				<input type="text" value="LAKJSDFI16857461634">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		var myRoleId="2323";
+		var teacher = {"name":"jeje","occupation":"猎手游侠","level":"40","sex":"1","roleId":"123"};
+		var schoolmate = [{"name":"jeje","occupation":"猎手游侠","level":"40","sex":"1","roleId":"123"},{"name":"jeje","occupation":"猎手游侠","level":"40","sex":"1","roleId":"123"}];
+		var $schoolMate = $("#schoolMate");
+		if(!schoolmate)$("#tip1").show();
+		$("#teacher").append(
+			'<li class="li-last">'+
+			'<img src="../images/character.png">'+
+			'<p class="title">'+teacher.name+'<br><span>'+teacher.occupation+' &nbsp;等级'+teacher.level+'</span></p>'+
+				'</li>');
+		for(var i=0; i<schoolmate.length; i++){
+			$schoolMate.append(
+				'<li>'+
+					'<img src="../images/character.png">'+
+					'<p class="title">'+schoolmate[i].name+'<br><span>'+schoolmate[i].occupation+'&nbsp;等級'+schoolmate[i].level+'</span></p>'+
+				'</li>'
+			);
+		};
+		if(i = (schoolmate.length-1)){
+			$schoolMate.find("li").eq(i).addClass("li-last ");
+		}
+		
+		$(".button2").click(function(){
+			window.location.href = "cn_7.html?roleId="+myRoleId;
+		})
+	</script>
+</body>
+</html>

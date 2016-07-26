@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta charset="UTF-8">
+	<title>新师徒</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/cn_3.css">
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<a href="javascript:;" >
+			<img src="../images/logo.png" class="logo">
+		</a>
+		<div class="content">
+			<h1 class="student">待审核徒弟</h1>
+			<ul class="sutdent-desc" id="check"></ul>
+			<p class="tip hide" id="tip1">没有未审核的徒弟</p>
+			<h1 class="student own">我的徒弟</h1>
+			<ul class="sutdent-desc" id="student"></ul>
+			<p class="tip hide" id="tip2">没有徒弟</p>
+			<div class="button">
+				<a href="javascript:;" class="button1"></a>
+				<a href="javascript:;" class="button2"></a>
+			</div>
+			<div class="teacher">
+				<h1>师傅资格码</h1>
+				<input type="text" value="LAKJSDFI16857461634">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		var myRoleId = "1111";//当前导师的id
+		var check = [{"name":"xixi","occupation":"巨武斗士","level":"40","sex":"0","roleId":"1233"},{"name":"xixi","occupation":"巨武斗士","level":"40","sex":"0","roleId":"1233"}]
+		var student = [{"name":"xixi","occupation":"巨武斗士","level":"40","sex":"0","roleId":"1233"},{"name":"xixi","occupation":"巨武斗士","level":"40","sex":"0","roleId":"1233"}]
+		var $check = $("#check");//待审核
+		var $student = $("#student");
+		if(!check)$("#tip1").show();
+		if(!student)$("#tip2").show();
+		for(var i = 0; i<check.length; i++){
+			$check.append('<li roleId = "'+check[i].roleId+'">'+
+					'<img src="../images/character.png">'+
+					'<p class="title">'+check[i].name+'<br><span>'+check[i].occupation+'&nbsp;'+check[i].level+'等级</span></p>'+
+					'<select class="accept">'+
+						'<option value="0">审核</option>'+
+						'<option value="1">接受</option>'+
+						'<option value="-1">拒绝</option>'+
+					'</select>'+
+				'</li>');
+			if (i==(check.length-1)) {
+				$check.find("li").eq(i).addClass("li-last");
+			};
+		}
+		for(var i = 0; i<check.length; i++){
+			$student.append('<li>'+
+					'<img src="../images/character.png">'+
+					'<p class="title">'+student[i].name+'<br><span>'+student[i].occupation+'&nbsp;'+student[i].level+'等级</span></p>'+
+				'</li>');
+			if (i==(student.length-1)) {
+				$student.find("li").eq(i).addClass("li-last");
+			};
+		}
+
+		var checkFlag = true;
+		$check.on("change","select", function(){
+			if(!checkFlag)return;
+			var examineCode = $(this).val();
+			var _id = $(this).parent("li").attr("roleId");
+			checkFlag = false;
+			$.ajax({
+				type:"GET",
+				url:"../data/test.json",
+				data:{myRoleId:myRoleId,tdid:_id},
+				dataType:"json",
+				success:function(data){
+					if(data.status<0){
+						alert(data.messages)
+					}
+					else{
+						location.href = location.href;
+					}
+					checkFlag = true;
+				}
+			})
+		})
+		$(".button1").click(function(){
+			window.history.go(-1);
+		})
+		$(".button2").click(function(){
+			window.location.href ="cn_6.html?roleId="+myRoleId;
+		})
+	</script>
+</body>
+</html>

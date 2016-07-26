@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta charset="UTF-8">
+	<title>新师徒</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/cn_1.css">
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<a href="javascript:;" >
+			<img src="../images/logo.png" class="logo">
+		</a>
+		<div class="desc">
+			<h1>活动说明</h1>
+			<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXX<br>
+				XXXXXXXXXXXXXXXXXXXXXXXXXX<br>
+				XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+		</div>
+		<div class="button">
+			<select class="chose">
+				<option value="0">选择角色</option>
+			</select>
+			<a href="javascript:;" class="nex"></a>
+			<a href="javascript:;" class="result"></a>
+		</div>	
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+	var $chose = $(".chose");
+	var role = [{"roleName":"lalalla","roleId":"1"},{"roleName":"ddddd","roleId":"2"}]
+			for(var i = 0; i < role.length; i++){
+				$chose.append('<option value ="'+ role[i].roleId+' "">'+role[i].roleName+'</option>');
+			};
+		$(".nex").click(function(){
+			if($chose.val()=="0"){
+				alert("请选择角色");
+				return;
+			}
+				window.location.href = "cn_2.html?roleId="+ $chose.val();
+		})
+
+	</script>
+</body>
+</html>

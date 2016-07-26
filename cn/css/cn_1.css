@@ -1,0 +1,7 @@
+.desc {width: 2.8rem; height: 0.85rem; margin: 2.26rem auto 0 auto;}
+.desc h1 {font-size: 0.15; color: #f9bc44; line-height: 0.3rem;}
+.desc p {font-size: 0.13rem; color: #f9bc44; line-height: 0.2rem;}
+.button {width: 2.85rem; height: 1.65rem; margin:0.15rem auto 0 auto;}
+.chose {width: 2.85rem; height: 0.354rem; line-height:0.355rem;  background: url(../images/chose.png); background-size: 100%; font-size: 0.15rem; padding-left:0.135rem;  color: #f5cd5a; -webkit-appearance: none; display: block;}
+.nex {width: 2.85rem; height: 0.35rem; background: url(../images/nex.jpg); background-size: 100%; display: block; margin-top: 0.2rem;}
+.result {width: 2.85rem; height: 0.35rem; background: url(../images/result.jpg); background-size: 100%; display: block; margin-top: 0.16rem;}

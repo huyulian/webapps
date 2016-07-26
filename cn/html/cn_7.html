@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta charset="UTF-8">
+	<title>新师徒</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/cn_7.css">
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<a href="javascript:;" >
+			<img src="../images/logo.png" class="logo">
+		</a>
+		<div class="content">
+			<ul>
+				<li class="next">
+					<img src="../images/c7_1.png">
+					<p>我们都是一家人<br><span>与师傅加入同一公会</span></p>
+					<a href="javascript:;" class="last-a disable"></a>
+				</li>
+				<li class="next">
+					<img src="../images/c7_2.png">
+					<p>初窥门径<br><span>达到20级</span></p>
+					<a href="javascript:;" class="disable"></a>
+				</li>
+				<li class="next">
+					<img src="../images/c7_3.png">
+					<p>融会贯通<br><span>达到50级</span></p>
+					<a href="javascript:;" class="disable"></a>
+				</li>
+				<li class="next last-li">
+					<img src="../images/c7_4.png">
+					<p>青出于蓝<br><span>达到满级(70级)</span></p>
+					<a href="javascript:;" class="one-a disable"></a>
+				</li>
+			</ul>
+			<div class="button">
+				<a href="javascript:;" class="button1" onclick="window.history.go(-1);"></a>
+				<a href="javascript:;" class="button2"></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		var roleId = "121212";
+		var $awardList = $(".content")
+		var awardStatus = [{status:1,taskId:"a"},{status:0,taskId:"b"},{status:1,taskId:"c"},{status:0,taskId:"d"}];
+		for(var i=0; i< awardStatus.length; i++){
+				if(awardStatus[i].status){
+					$awardList.find("li").eq(i).find("a").attr("id",awardStatus[i].taskId).removeClass("disable");
+				}else{
+					$awardList.find("li").eq(i).find("a").attr("id",awardStatus[i].taskId).addClass("disable");
+				}
+			}
+
+			$awardList.find("li").find("a").click(function(){
+				var _this = $(this);
+				var selectId = $(this).attr("id");
+				var myRoledId = roleId;
+				if(_this.hasClass("disable"))return;
+				$.ajax({
+					type:"GET",
+					url:"../data/test.json",
+					data:{selectId:selectId,myRoledId:myRoledId},
+					dataType:"json",
+					success:function(data){
+						if(data.status<0){
+							alert(data.messages);
+						}else{
+							_this.addClass("disable");
+							alert("领取成功!");
+						}
+					}
+				});
+			})
+	</script>
+</body>
+</html>

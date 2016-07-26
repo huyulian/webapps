@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta charset="UTF-8">
+	<title>新师徒</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/cn_4.css">
+	<script type="text/javascript" src="../js/common.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<a href="javascript:;" >
+			<img src="../images/logo.png" class="logo">
+		</a>
+		<div class="content">
+			<input type="text" value="请输入师傅资格码" onfocus="if(this.value=='请输入师傅资格码')this.value=''" onblur="if(this.value =='')this.value='请输入师傅资格码'">
+			<a href="javascript:;" class="button1"></a>
+			<h1>我的师傅</h1>
+			<div class="desc">
+			<p class="tip hide" id="tip1">还没有申请师傅</p>
+				<a href="javascript:;" class="button2"></a>
+			</div>
+		</div>		
+	</div>
+	<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		var $input = $("input");
+		var teacher = [{"name":"haha","occupation":"猎手游侠","level":"40","sex":"1","examineCode":"1"}];//1审核中0拒绝
+		var myroleId = "1232";
+		if(!teacher)$("#tip1").show();
+		if(teacher[0].examineCode == "1"){
+			$(".desc").prepend('<img src="../images/character.png" class="character">'+
+				'<p class="text">'+teacher[0].name+'<br><span>'+teacher[0].occupation+'等级'+teacher[0].level+'</span></p>'+
+				'<img src="../images/'+teacher[0].examineCode+'.png" class="check">'+
+				'<p class="reminder">'+
+					'<img src="../images/reminder.png" >'+
+					'<span>请耐心等待师傅通过审核</span>'+
+				'</p>');
+		}else{
+			$(".desc").prepend('<img src="../images/character.png" class="character">'+
+				'<p class="text">'+teacher[0].name+'<br><span>'+teacher[0].occupation+'等级'+teacher[0].level+'</span></p>'+
+				'<img src="../images/'+teacher[0].examineCode+'.png" class="check">'+
+				'<p class="reminder">'+'</p>');
+		}
+
+		var applyFlag = true;
+		$(".button1").click(function(){
+			if(!applyFlag) return;
+			$teacherCode = $.trim($input.val());
+			if(!$teacherCode || $teacherCode =="请输入师傅资格码")
+			{
+				alert("请输入师傅资格码");
+				return;
+			}
+			var teacherCode = $teacherCode;
+			var myroleId = myroleId;
+			applyFlag = false;
+			$.ajax({
+				type:"GET",
+				url:"../data/test.json",
+				data:{teacherCode:teacherCode,myroleId:myroleId},
+				dataType:"json",
+				success:function(data){
+					if(data.status<0){
+						alert(data.messages);
+					}
+					location.herf = location.herf;
+					applyFlag = true;
+				}
+				
+			});
+		});
+		$(".button2").click(function(){
+			window.location.href = "cn_2.html";
+		})
+	</script>
+</body>
+</html>

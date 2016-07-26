@@ -1,0 +1,6 @@
+.desc {width: 2.8rem; height: 0.85rem; margin: 2rem auto 0 auto;}
+.desc h1 {font-size: 0.15; color: #f9bc44; line-height: 0.3rem;}
+.desc p {font-size: 0.13rem; color: #f9bc44; line-height: 0.2rem;}
+.button {width: 2.8rem; height: 0.35rem; margin: 0.27rem auto 1rem auto;}
+.button1 {width: 1.33rem; height: 0.35rem;  background: url(../images/cn2_button1.jpg); background-size: 100%; display: block; float: left;}
+.button2 {width: 1.33rem; height: 0.35rem; display: block; background: url(../images/cn2_button.jpg); background-size: 100%; float: left; margin-left: 0.14rem}

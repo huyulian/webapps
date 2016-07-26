@@ -1,0 +1,18 @@
+.content {width: 2.8rem; height: 3.8rem; margin:2rem auto 0 auto;}
+.content ul li {width: 100%; height: 0.66rem; border-bottom: 0.005rem solid #fab736;}
+.content ul li img {width:0.365rem; height: 0.37rem; margin-left: 0.09rem; margin-top: 0.1rem; float: left;}
+.content ul li p {display: block; font-size: 0.16rem; color: #d76323; font-weight: bold; margin-top: 0.1rem; margin-left: 0.08rem; float: left;}
+.content ul li p span {font-size: 0.11rem; font-weight: normal;}
+.content ul li a {display: block; width: 0.74rem; height: 0.255rem; background: url(../images/cn6_button.png) 0 0; background-size: 100%; float: left; margin-left: 0.22rem; margin-top: 0.05rem}
+.disable {background: url(../images/cn6_button1.png) no-repeat !important; background-size: 100% !important;}
+.one {height: 0.75rem !important;}
+.one select {background: url(../images/cn6_chose.png); background-size: 100%; width: 1.225rem; height: 0.24rem; line-height: 0.26rem; outline: none;  font-size: 0.13rem; color: #fab736; float: left; margin-left: 0.08rem; padding-left: 0.075rem; margin-top: 0.05rem; -webkit-appearance: none;}
+.one a { float: right; margin-top: -3%;}
+.next img {margin-top: 0.17rem !important;}
+.next p {margin-top: 0.17rem !important;}
+.content ul li.next a {margin-left: 0.8rem; margin-top: 0.22rem;}
+.last-a {margin-left: 0.44rem!important;}
+.last-li {border-bottom: none !important;}
+.button {width: 100%; height: 0.35rem; margin-top: 8%;}
+.button1 {display: inline-block; width: 1.33rem; height: 0.35rem; background: url(../images/return.jpg);  background-size: 100%; float: left;}
+.button2 {display: inline-block; width: 1.33rem; height: 0.35rem; background: url(../images/look.jpg); background-size: 100%; margin-left: 0.14rem; float: left;}
