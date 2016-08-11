@@ -1,0 +1,93 @@
+@charset "utf-8";
+body {min-width: 960px;}
+.wrapper {position: relative; width: 100%;}
+.content {position: relative; width: 960px; margin: 0 auto; z-index: 20; overflow: hidden;}
+.logo {display: block; width: 265px; height: 97px; margin-top: 22px;}
+.slogan {margin-top: 32px;}
+.game {margin-top: 260px; overflow: hidden;}
+.game-list {width: 100%;}
+.game-list li {float: left; width: 226px; height: 382px; margin-right: 18px;}
+.game-list-last {margin-right: 0 !important;}
+.live-img {width:608px; height: 364px; margin-top: 202px; margin-left: 174px;}
+.video {width: 100%; height: 384px; margin-top: 136px; margin-left: 1px;}
+.video li {float: left; position: relative; width: 288px; height: 318px;}
+.video-list1 {background:url(../images/liev/nw.png) no-repeat 0 0;}
+.video-list2 {background:url(../images/liev/kov.png) no-repeat 0 0;}
+.video-list3 {background:url(../images/liev/wf.png) no-repeat 0 0;}
+.video-list4 {background:url(../images/liev/N3.png) no-repeat 0 0;}
+.video li a {display: block; width: 56px; height: 65px; background: url(../images/liev/play.png) no-repeat;}
+.a-top {position: absolute; left: 126px; top: 104px;}
+.a-bottom {position: absolute; left: 126px; top: 130px;}
+.two {margin-top: 62px; margin-left: -65px;}
+.three {margin-left: -63px;}
+.interact {width: 958px; height: 465px; margin-top: 300px; border:1px solid #be1bad;}
+.interact-desc {float: left; width: 318px; margin-left: 18px; margin-top: 50px; line-height: 30px;font-size: 16px; color: #ffe6fc;}
+.interact-desc span {margin-left: 104px; font-size: 26px;}
+.interact-show {float:left; width: 560px; height: 440px; margin-top: 14px; margin-left: 24px; border: 1px solid #d2d2d2; background-color: #ffffff;}
+.splendid {position: relative; width: 100%; height: 470px; margin-top: 340px; overflow: hidden;}
+.img-list {position: relative;  height: 470px; overflow: hidden;}
+.img-list li {float: left; width: 960px; height: 470px;}
+.splendid-left {float: left; width:477px; height: 470px; }
+.splendid-right {float: left; width:477px; margin-left: 5px; height: 470px; }
+.splendid-img1 {width: 476px; height: 307px;}
+.splendid-img2 {margin-top: 10px; width: 235px; height: 152px;}
+.splendid-img3 {margin-top: 10px; margin-left: 2px; width: 235px; height: 152px;}
+.splendid-img4 {margin-top: 10px;width: 476px; height: 307px;}
+.splendid-img5 {width: 235px; height: 152px;}
+.splendid-img6 {margin-left: 2px; width: 235px; height: 152px;}
+.prev {display: block; position: absolute; top: 190px; left: 8px; width: 46px; height: 76px; background: url(../images/splendid/prev.png) no-repeat;}
+.next {display: block; position: absolute; top: 190px; right: 8px; width: 46px; height: 76px; background: url(../images/splendid/next.png) no-repeat;}
+.show {margin-top: 340px;width: 100%; height: 490px;}
+.show-list1 {width: 100%; height: 150px;}
+.show-list1 li {float: left; width: 313px; height: 150px; margin-right: 10px;}
+.show-list2 {width: 100%; height: 150px; margin-top: 20px;}
+.show-list2 li {float: left; width: 233px; height: 150px; margin-right: 9px;}
+.show-list3 {width: 100%; height: 150px; margin-top: 20px;}
+.show-list3 li {float: left; width: 184px; height: 150px; margin-right: 10px;}
+.list-last {margin-right: 0 !important;}
+.message {margin-top: 300px;}
+.addres {float: left; width: 314px;}
+.addres li { margin-top: 110px;}
+.message-title {margin-top: 20px; font-size: 36px; color: #be1bad;}
+.message-title .name {display: inline-block; width: 113px; height: 27px; margin-top: 5px; margin-left: 10px; }
+.name-img1 {background: url(../images/message/message.png) 0 -61px;}
+.name-img2 {background: url(../images/message/message.png) -113px -61px; width: 135px !important;}
+.name-img3 {background: url(../images/message/message.png) -248px -61px; width: 73px !important;}
+.name-img4 {background: url(../images/message/message.png) -321px -61px;}
+.addres-one {margin-top: 0 !important;}
+.addres-two {margin-top: 155px !important;}
+.message-desc {margin-top: 8px; line-height: 24px; font-size: 18px; color: #ffffff;}
+.message-img {width: 620px; float: left; margin-left: 20px;}
+.img-container1 {width: 61px; height: 61px; background: url(../images/message/message.png) no-repeat 0 0;}
+.img-container2 {width: 61px; height: 61px; background: url(../images/message/message.png) no-repeat -61px 0;}
+.img-container3 {width: 61px; height: 61px; background: url(../images/message/message.png) no-repeat -122px 0;}
+.img-container4 {width: 61px; height: 61px; background: url(../images/message/message.png) no-repeat -183px 0;}
+.img-two {margin-top: 182px;}
+.nav {position:fixed; top: 50%; right: 100px; margin-top: -179px; width: 144px; height: 358px; z-index: 50;}
+.nav ul {width: 152px; height: 358px; }
+.nav ul li {position: relative; height: 60px; line-height: 60px;}
+.nav ul li a {display: block; height: 60px; line-height: 60px; font-size: 24px; color: #7a737e;}
+.nav ul li img {position: absolute; left: 108px; top: 14px;}
+.li-cur {color: #ab2192 !important;}
+.li-cur img {left: 104px !important; top: 8px !important;}
+.bg {position: absolute; top: 0; left: 0; width: 100%; z-index: 10;}
+.bg>div {background-position: center top; background-repeat: no-repeat;height: 850px;}
+.bg1 {background: url(../images/bg/bg_01.jpg);}
+.bg2 {background: url(../images/bg/bg_02.jpg);}
+.bg3 {background: url(../images/bg/bg_03.jpg);}
+.bg4 {background: url(../images/bg/bg_04.jpg);}
+.bg5 {background: url(../images/bg/bg_05.jpg);}
+.bg6 {background: url(../images/bg/bg_06.jpg)}
+.bg7 {background: url(../images/bg/bg_07.jpg);}
+.bg8{background: url(../images/bg/bg_08.jpg);}
+.maodian-liev {display: block; margin-top: 100px; }
+.maodian-interact {display: block;}
+.maodian-splendid {display: block; margin-top: 100px;}
+.maodian-show {display: block; margin-top: 100px;}
+.maodian-message {display: block; margin-top: 100px;}
+.maodian-game {display: block;}
+.popup-video {position: fixed; left: 50%; top: 50%; margin-top: -270px; margin-left: -480px; width: 960px; height: 540px; background-color: #282828;z-index: 600;display: none;}
+.popup-video .begin {display: block; position: absolute; top: 184px; left: 374px; width: 89px; height: 103px; background:url(../images/play.png) no-repeat;}
+.exit {display: block; position: absolute; top: 0; right: -58px; width: 46px; height: 46px; background:url(../images/exit.png) no-repeat;}
+.mask {position: fixed;left: 0;top: 0;right: 0;bottom: 0;z-index: 500;opacity: 0.6;background-color: #000;filter:alpha(opacity=60);display: none;}
+.douyu {width: 608px;height: 364px;margin-top: 300px;margin-left: 174px;}
