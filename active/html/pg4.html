@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>国服活动</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<a href="javascript:;" class="logo">
+					<img src="../images/pg_logo.png">
+				</a>
+				<ul class="mainnav">
+					<li><a href="index.html">首页</a></li>
+					<li ><a href="pg1.html" >壹</a></li>
+					<li><a href="pg2.html">贰</a></li>
+					<li><a href="pg3.html">叁</a></li>
+					<li><a href="pg4.html" class="current">肆</a></li>
+					<li><a href="pg5.html">伍</a></li>
+					<li><a href="http://kov.mytvgame.com/kov/newscenter/acts/20160614/55235.html"  target="_blank">陆</a></li>
+					<li><a href="pg7.html">柒</a></li>
+					<li><a href="pg8.html">捌</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<div class="title">
+					<img src="../images/step4.png">
+					<h1>首次充值五色玉 赠弓神英雄之女</h1>
+				</div>
+				<div class="active">
+					<h4>活动时间：</h4>
+					<p>开服后 -- 2016.6.24</p>
+					<h4>活动内容：</h4>
+					<p>开服后-- 2016.6.24活动期间，玩家《三国战纪》PS4版游戏内<span>第一次</span>充值累计充值达600五色玉。即可免费获得女性武将“英雄之女黄芸”<br>礼包。</p>
+				</div>
+				<div class="bag-pg4">
+					<h4>孙尚香枭姬扩展包 :</h4>
+					<div class="pg4-bag">
+						<div class="bag-left">
+							<img src="../images/pg4_left.jpg">
+						</div>
+						<div class="bag-right">
+							<ul class="bag-list">
+								<li>
+									<img src="../images/pg4_01.jpg">
+									<p>黄芸</p>
+									<div class="li-mark">
+										<p>女性技巧型武将</p>
+									</div>
+								</li>
+								<li>
+									<img src="../images/pg4_02.jpg">
+									<p>黄芸武将魂</p>
+									<div class="li-mark">
+										<p>黄芸武将魂×10</p>
+									</div>
+								</li>
+								<li>
+									<img src="../images/pg4_03.jpg">
+									<p>雕花弓</p>
+									<div class="li-mark">
+										<p class="mark-p-margin1">黄芸专属武器——雕花弓（紫色品质）</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="notice">
+					<h6>注意事项</h6>
+					<p><img src="../images/linxing.png"><span>第一次在《三国战纪》PS4版中累计充值满600五色玉的玩家，不可重复参与。</span></p>
+					<p><img src="../images/linxing.png"><span>活动奖励将于活动结束后27日18时前以邮件形式发送至玩家信箱内，请注意查收。</span></p>
+				</div>
+			</div>
+			<div class="character4">
+			<img src="../images/bg2/character_04.png">
+		</div>
+		</div>
+		<div class="bg">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+	var $nav = $(".mainnav li a");
+		$nav.hover(function(){
+			if($(this).hasClass("current"))return;
+			$nav.removeClass("current");
+			$(this).addClass("current");
+		},function(){
+			$(this).removeClass("current");
+		});
+		$(".mainnav ").mouseout(function(){
+			$nav.eq(4).addClass("current");
+		})
+		$(".bag-list li").hover(function(){
+			$(this).find("div").show();
+		}, function(){
+			$(this).find("div").hide();
+		})
+	</script>
+</body>
+</html>

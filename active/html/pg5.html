@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>国服活动</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<a href="javascript:;" class="logo">
+					<img src="../images/pg_logo.png">
+				</a>
+				<ul class="mainnav">
+					<li><a href="index.html">首页</a></li>
+					<li ><a href="pg1.html" >壹</a></li>
+					<li><a href="pg2.html">贰</a></li>
+					<li><a href="pg3.html">叁</a></li>
+					<li><a href="pg4.html">肆</a></li>
+					<li><a href="pg5.html" class="current">伍</a></li>
+					<li><a href="http://kov.mytvgame.com/kov/newscenter/acts/20160614/55235.html"  target="_blank">陆</a></li>
+					<li><a href="pg7.html">柒</a></li>
+					<li><a href="pg8.html">捌</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<div class="title">
+					<img src="../images/step5.png">
+					<h1>武魂涌动 限时解锁武将赠英雄象征</h1>
+				</div>
+				<div class="active">
+					<h4>活动时间：</h4>
+					<p>开服后 -- 2016.6.26</p>
+					<h4>活动内容：</h4>
+					<p>开服后-2016.6.26活动期间，凡在《三国战纪》游戏中使用五色玉解锁或购买PSN武将礼包解锁指定游戏武将即可获得对应绽放好礼。</p>
+				</div>
+					<div class="bag-pg5">
+					<h4>解锁指定武将将获得对应奖励：</h4>
+					<div class="pg5-bag">
+						<div class="bag-left">
+							<p>解锁<span>诸葛亮</span>——免费赠送诸葛亮武将魂×30、诸葛亮之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+							<p>解锁<span>夏侯惇</span>——免费赠送夏侯惇武将魂×30、夏侯惇之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+							<p>解锁<span>赵云</span>——免费赠送赵云武将魂×30、赵云之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+							<p>解锁<span>张飞</span>——免费赠送张飞武将魂×30、张飞之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+							<p>解锁<span>貂蝉</span>——免费赠送貂蝉武将魂×30、貂蝉之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+							<p>解锁<span>小乔</span>——免费赠送小乔武将魂×30、小乔之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+							<p>解锁<span>孙坚</span>——免费赠送孙坚武将魂×30、孙坚之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+							<p>解锁<span>黄芸</span>——免费赠送黄芸武将魂×30、黄芸之英雄魂×5、英雄之戒（紫色品质）一枚</p>
+						</div>
+						<div class="bag-right">
+							<img src="../images/pg5.jpg" height="210" width="374">
+						</div>
+					</div>
+				</div>
+				<div class="notice">
+					<h6>注意事项</h6>
+					<p><img src="../images/linxing.png"><span>活动期间可直接在游戏内的武将选择界面购买解锁指定武将即可获得活动奖励。</span></p>
+					<p><img src="../images/linxing.png"><span>礼包奖励将在玩家解锁武将成功后的10分钟内发送至玩家邮箱内。</span></p>
+				</div>
+			</div>
+			<div class="character5">
+			<img src="../images/bg2/character_05.png">
+		</div>
+		</div>
+		<div class="bg">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" >
+		var $nav = $(".mainnav li a");
+		$nav.hover(function(){
+			if($(this).hasClass("current"))return;
+			$nav.removeClass("current");
+			$(this).addClass("current");
+		},function(){
+			$(this).removeClass("current");
+		});
+		$(".mainnav ").mouseout(function(){
+			$nav.eq(5).addClass("current");
+		})
+	</script>
+</body>
+</html>

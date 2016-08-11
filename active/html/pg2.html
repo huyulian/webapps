@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>国服活动</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<a href="javascript:;" class="logo">
+					<img src="../images/pg_logo.png">
+				</a>
+				<ul class="mainnav">
+					<li><a href="index.html">首页</a></li>
+					<li ><a href="pg1.html">壹</a></li>
+					<li><a href="pg2.html" class="current">贰</a></li>
+					<li><a href="pg3.html">叁</a></li>
+					<li><a href="pg4.html">肆</a></li>
+					<li><a href="pg5.html">伍</a></li>
+					<li><a href="http://kov.mytvgame.com/kov/newscenter/acts/20160614/55235.html"  target="_blank">陆</a></li>
+					<li><a href="pg7.html">柒</a></li>
+					<li><a href="pg8.html">捌</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<div class="title">
+					<img src="../images/step2.png">
+					<h1>庆三国战纪国服上线 双倍经验福利来袭</h1>
+					<p>《三国战纪》PS4版将于6月16日（周四）至6月20日（周一）期间开启全服多倍通关经验活动，欢迎各位三国武将豪杰<br>参与！</p>
+				</div>
+				<div class="active">
+					<h4>双倍时段 :</h4>
+					<p>2016.6.16 -- 2016.6.20，晚间20:00 -- 22:00</p>
+					<img src="../images/time-title.jpg" height="50" width="569">
+					<table class="time-title">
+						<tr>
+							<td>6月16日</td>
+							<td>周四</td>
+							<td class="time-td">20：00-22：00</td>
+							<td class="td-right">1.8</td>
+						</tr>
+						<tr>
+							<td>6月17日</td>
+							<td>周五</td>
+							<td>20：00-22：00</td>
+							<td class="td-right">1.8</td>
+						</tr>
+						<tr>
+							<td>6月18日</td>
+							<td>周六</td>
+							<td>20：00-22：00</td>
+							<td class="td-right">2.0</td>
+						</tr>
+						<tr>
+							<td>6月19日</td>
+							<td>周日</td>
+							<td>20：00-22：00</td>
+							<td class="td-right">2.0</td>
+						</tr>
+						<tr class="tr-bottom">
+							<td>6月20日</td>
+							<td>周一</td>
+							<td>20：00-22：00</td>
+							<td class="td-right">1.8</td>
+						</tr>
+					</table>
+					<h4>活动内容：</h4>
+					<p>2016.6.16 -- 2016.6.20，晚间20:00 -- 22:00期间，登录《三国战纪》PS4版游戏并参与挑战剧情模式关卡成功后通关即可<br>获得多倍通关游戏经验。</p>
+					<img src="../images/pg2_area.jpg">
+				</div>
+				<div class="notice">
+					<h6>注意事项</h6>
+					<p><img src="../images/linxing.png"><span>2倍通关经验活动期间仍可使用“双倍经验”道具，经验加成效果将会进行叠加。</span></p>
+				</div>
+			</div>
+			<div class="character2">
+			<img src="../images/bg2/character_02.png">
+		</div>
+		</div>
+		<div class="bg">
+			<div class="bg4"></div>
+			<div class="bg5"></div>
+			<div class="bg6"></div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" >
+		var $nav = $(".mainnav li a");
+		$nav.hover(function(){
+			if($(this).hasClass("current"))return;
+			$nav.removeClass("current");
+			$(this).addClass("current");
+		},function(){
+			$(this).removeClass("current");
+		});
+		$(".mainnav ").mouseout(function(){
+			$nav.eq(2).addClass("current");
+		})
+	</script>
+</body>
+</html>

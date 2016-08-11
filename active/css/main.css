@@ -1,0 +1,30 @@
+@charset "utf-8";
+/***************[index Css]**************/
+body {min-width: 1000px;}
+.wrapper {width: 100%; position: relative;}
+.content {position: relative; width: 1000px; height: 1136px; margin: 0 auto; z-index: 40;}
+.logo {display: block; width: 257px; height: 103px; position: absolute; left: -104px; top: 60px;}
+.pg {position: absolute; width: 1232px; left: -112px; right: -120px;  top: 741px;}
+.pg li {width: 153px; height: 174px; text-align: center; float: left;  }
+.pg li a {display: block; width: 137px; height: 138px;  margin-left: 8px; margin-top: 29px;background: url(../images/menu.png);}
+.list1 a {background-position: -1px -138px !important;}
+.list1 a:hover {background-position: 0 0 !important;}
+.list2 a {background-position: -137px -138px !important;}
+.list2 a:hover {background-position: -137px 0 !important; }
+.list3 a {background-position: -275.5px -138px !important;}
+.list3 a:hover {background-position: -274px 0 !important;}
+.list4 a {background-position: -411px -138px !important;}
+.list4 a:hover {background-position: -411px 0 !important;}
+.list5 a {background-position: -548px -138px !important;}
+.list5 a:hover {background-position: -548px 0 !important;}
+.list6 a {background-position: -685px -138px !important;}
+.list6 a:hover {background-position: -685px 0 !important;}
+.list7 a {background-position: -822px -138px !important;}
+.list7 a:hover {background-position: -822px 0 !important;}
+.list8 a {background-position: -959px -138px !important;}
+.list8 a:hover {background-position: -959px 0 !important;}
+.bg {position: absolute; left: 0; top: 0; width: 100%;}
+.bg>div {background-repeat: no-repeat; background-position: center top; z-index: 20;}
+.bg1 {background: url(../images/bg1/bg_01.jpg); height: 379px;}
+.bg2 {background: url(../images/bg1/bg_02.jpg); height: 378px;}
+.bg3 {background: url(../images/bg1/bg_03.jpg); height: 379px;}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>国服活动</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<a href="javascript:;" class="logo">
+					<img src="../images/pg_logo.png">
+				</a>
+				<ul class="mainnav">
+					<li><a href="index.html">首页</a></li>
+					<li ><a href="pg1.html" >壹</a></li>
+					<li><a href="pg2.html">贰</a></li>
+					<li><a href="pg3.html" class="current">叁</a></li>
+					<li><a href="pg4.html">肆</a></li>
+					<li><a href="pg5.html">伍</a></li>
+					<li><a href="http://kov.mytvgame.com/kov/newscenter/acts/20160614/55235.html"  target="_blank">陆</a></li>
+					<li><a href="pg7.html">柒</a></li>
+					<li><a href="pg8.html">捌</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<div class="title">
+					<img src="../images/step3.png">
+					<h1>孙尚香枭姬包上架</h1>
+					<p>《三国战纪》PS4版庆祝国服开启，同步推出新武将角色“孙尚香”。即日起可直接在PSN Store（国服）内直接购买获得。港服PSN store将于近期更新。</p>
+				</div>
+				<div class="bag-pg3">
+					<h4>孙尚香枭姬扩展包 :</h4>
+					<div class="pg3-bag">
+						<div class="bag-left">
+							<img src="../images/pg3_bag.jpg">
+						</div>
+						<div class="bag-right">
+							<ul class="bag-list">
+								<li>
+									<img src="../images/pg3_01.jpg">
+									<p>“孙尚香”</p>
+									<div class="li-mark">
+										<p>解锁获得速度型武将“孙尚香”</p>
+									</div>
+								</li>
+								<li>
+									<img src="../images/pg3_02.jpg">
+									<p>“阴阳双拐”</p>
+									<div class="li-mark">
+										<p>孙尚香专属紫色品质武器</p>
+									</div>
+								</li>
+								<li >
+									<img src="../images/pg3_03.jpg">
+									<p>孙尚香密卷</p>
+									<div class="li-mark">
+										<p class="mark-p-margin">孙尚香密卷，使用后可额外增加孙尚香可用技能点</p>
+									</div>
+								</li>
+								<li >
+									<img src="../images/pg3_04.jpg">
+									<p>双倍经验卡×2</p>
+									<div class="li-mark">
+										<p class="mark-p-margin">双倍经验卡×2提供关卡通关双倍经验</p>
+									</div>
+								</li>
+								<li class="li-two">
+									<img src="../images/pg3_05.jpg">
+									<p>华佗秘药</p>
+									<div class="li-mark">
+										<p class="mark-p-margin">瞬间恢复所有血量，并在一定时间内减少50%所受伤害</p>
+									</div>
+								</li>
+								<li class="li-two">
+									<img src="../images/pg3_06.jpg">
+									<p>天地龙角丸</p>
+									<div class="li-mark">
+										<p>瞬间恢复所有血量和气力值</p>
+									</div>
+								</li>
+								<li class="li-two">
+									<img src="../images/pg3_07.jpg">
+									<p>麝香活血散</p>
+									<div class="li-mark">
+										<p class="mark-p-margin">解除自己与队友的负面状态并恢复30%的血量</p>
+									</div>
+								</li>
+								<li class="li-two">
+									<img src="../images/pg3_08.jpg">
+									<p>银两10000</p>
+									<div class="li-mark">
+										<p>银两100000</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="notice">
+					<h6>注意事项</h6>
+					<p><img src="../images/linxing.png"><span>“孙尚香枭姬扩展包”只可在PSN Store（国服）内直接购买获得。</span></p>
+				</div>
+			</div>
+			<div class="character3">
+			<img src="../images/bg2/character_03.png">
+		</div>
+		</div>
+		<div class="bg">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+	var $nav = $(".mainnav li a");
+		$nav.hover(function(){
+			if($(this).hasClass("current"))return;
+			$nav.removeClass("current");
+			$(this).addClass("current");
+		},function(){
+			$(this).removeClass("current");
+		});
+		$(".mainnav").mouseout(function(){
+			$nav.eq(3).addClass("current");
+		})
+		$(".bag-list li").hover(function(){
+			$(this).find("div").show();
+		},function(){
+			$(this).find("div").hide();
+		});
+	</script>
+</body>
+</html>

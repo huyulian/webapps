@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>国服活动</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/page.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<a href="javascript:;" class="logo">
+					<img src="../images/pg_logo.png">
+				</a>
+				<ul class="mainnav">
+					<li><a href="index.html">首页</a></li>
+					<li ><a href="pg1.html" >壹</a></li>
+					<li><a href="pg2.html">贰</a></li>
+					<li><a href="pg3.html">叁</a></li>
+					<li><a href="pg4.html">肆</a></li>
+					<li><a href="pg5.html">伍</a></li>
+					<li><a href="http://kov.mytvgame.com/kov/newscenter/acts/20160614/55235.html"  target="_blank">陆</a></li>
+					<li><a href="pg7.html" class="current">柒</a></li>
+					<li><a href="pg8.html">捌</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<div class="title">
+					<img src="../images/step7.png">
+					<h1>独眼战狼“夏侯惇”登场 开放免费试玩</h1>
+				</div>
+				<div class="bag-pg7">
+					<div class="pg7-bag">
+						<div class="bag-left">
+							<h4>免费时间：</h4>
+							<p class="time">2016.6.15 -- 2016.6.21</p>
+							<h4>本周可免费使用武将——<span>夏侯惇</span></h4>
+							<div class="notice-pg7">
+								<h6>注意事项</h6>
+								<img src="../images/linxing.png"><p>免费武将只可在免费期间内使用。</p>
+								<img src="../images/linxing.png"><p>其携带物品和装备无法再非免费期内进行变更。</p>
+							</div>
+							<a href="http://kov.mytvgame.com/static/kov/act/wujiang_sub/index.html?pageIndex=9" class="look" target="_blank"></a>
+						</div>
+						<div class="bag-right">
+							<img src="../images/pg7_01.jpg">
+						</div>
+					</div>
+				</div>
+				<h1 class="last-h1">龙胆将军“赵云”登场 开放免费试玩</h1>
+				<div class="bag-pg7">
+					<div class="pg7-bag">
+						<div class="bag-left">
+							<h4>免费时间：</h4>
+							<p class="time">2016.6.15 -- 2016.6.21</p>
+							<h4>本周可免费使用武将——<span>赵云</span></h4>
+							<div class="notice-pg7">
+								<h6>注意事项</h6>
+								<img src="../images/linxing.png"><p>免费武将只可在免费期间内使用。</p>
+								<img src="../images/linxing.png"><p>其携带物品和装备无法再非免费期内进行变更。</p>
+							</div>
+							<a href="http://kov.mytvgame.com/static/kov/act/wujiang_sub/index.html?pageIndex=8" class="look" target="_blank"></a>
+						</div>
+						<div class="bag-right">
+							<img src="../images/pg7_2.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="character7">
+			<img src="../images/bg2/character_07.png">
+		</div>
+		</div>
+		<div class="bg">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" >
+		var $nav = $(".mainnav li a");
+		$nav.hover(function(){
+			if($(this).hasClass("current"))return;
+			$nav.removeClass("current");
+			$(this).addClass("current");
+		},function(){
+			$(this).removeClass("current");
+		});
+		$(".mainnav").mouseout(function(){
+			$nav.eq(7).addClass("current");
+		})
+	</script>
+</body>
+</html>
