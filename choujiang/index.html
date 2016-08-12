@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="head">
+			<div class="top-logo">
+				<img src="images/top_logo.jpg" alt="logo">
+			</div>
+			<div class="login">
+				<a href="javascript:;" class="login-left">登陆账号</a>
+				<a href="javascript:;" class="login-right">注册账号</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="logo">
+				<a href="javascript:;"><img src="images/logo.png" alt="logo"></a>
+			</div>
+			<p class="time">活动时间：9.15-9.20</p>
+			<div class="enter"></div>
+			<div class="award">
+				<ul class="award-desc">
+						<li id="cj0" class="cj" desc="PS4手柄"><span></span></li>
+						<li id="cj1" class="cj" desc="iPhone 6S"><span></span></li>
+						<li id="cj2" class="cj" desc="鸡腿抱枕"><span></span></li>
+						<li id="cj3" class="cj" desc="谢谢参与"><span></span></li>
+						<li id="cj9" class="cj" desc="特权礼包"><span></span></li>
+						<li class="cj"><div class="award-login">
+							<a href="javascript:;"></a>
+						</div></li>
+						<li class="cj"><div class="award-lottery">
+							<a href="javascript:;"></a>
+						</div></li>
+						<li id="cj4" class="cj" desc="特权礼包"><span></span></li>
+						<li id="cj8" class="cj" desc="谢谢参与"><span></span></li>
+						<li id="cj7" class="cj" desc="三国萌兔"><span></span></li>
+						<li id="cj6" class="cj" desc="京东50元卡"><span></span></li>
+						<li id="cj5" class="cj" desc="PS4主机"><span></span></li>
+				</ul>
+			</div>
+			<div class="tips">
+				<img src="images/tips.png" alt="小贴士">
+				<p>1、本次活动发放的特权礼包属于绑定礼包，不得转赠、贩卖。</p>
+				<p>2、抽中实物奖品后，请正确填写提示框内信息，以确保奖品能顺利投递。若因个人信息填写不正确，导致奖品无法寄送，则视为放弃。</p>
+				<p>3、本活动最终解释权归完美世界所有。</p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="contain">
+				<img src="images/footer_logo.png" alt="完美世界">
+				<p>
+					《网络文化经营许可证》编号：京网文[2011]0782-287号 <br>
+					《网络视听许可证》编号：0110587<br>
+					完美世界（北京）数字科技有限公司版权所有 Copyright © 2004-2015 Perfect World Co.,Lli.All Rights reserved 
+				</p>
+			</div>
+		</div>
+		<div class="bg">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+		</div>
+	</div>
+	<!--弹框-->
+	<div class="popup" id="hidePopup">
+		<p class="popup-text">
+			恭喜您获得<span id="award">XXXXX</span> ，请正确填写相关信息，奖品将在5个工作日内发放。
+		</p>
+		<input type="text" class="name">
+		<input type="text" class="tellphone">
+		<input type="text" class="address">
+		<button class="submite"><span>提交</span></button>
+		<a href="javascript:;" class="exit error" id="hide"></a>
+	</div>
+	<!--弹框未中奖-->
+	<div class="popup1" id="hide1Popup">
+		
+		<a href="javascript:;" class="exit1 error" id="hide1" ></a>
+	</div>
+	<!--弹框中奖-->
+	<div class="popup2" id="hide2Popup">
+		<p class="popup2-text">
+			恭喜您获得“<span>武圣特权礼包</span>”，礼包序列号为
+		</p>
+		<input type="text" class="code">
+		<ul class="desc">
+			<li class="title">礼包兑换步骤</li>
+			<li>1、创建Sony Entertainment Network（SEN）账号或使用现有账号（港服账号）；</li>
+			<li>2、“PS4”主机连网状态下，按下PlayStation Store的图标 ；</li>
+			<li>3、在PlayStation Store的菜单中正确输入礼包代码，点击“确定”完成兑换；</li>
+			<li>4、礼包奖品将以礼品邮件形式进入《三国战纪》PS4版中对应游戏账号的系统邮箱中；</li>
+			<li>5、本卡兑换有效期截止2016年1月31日。</li>
+		</ul>
+		<button class="copy"><span>复&nbsp;制</span></button>
+		<a href="javascript:;" class="exit2 error" id="hide2"></a>
+	</div>
+
+	<div class="history" id="hide3Popup">
+		<p class="popup1-text"></p>
+		<a href="javascript:;" class="exit1 error" id="hide3" ></a>
+	</div>
+	<div class="mask"></div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "utf-8";
+/***************[Reset Css]**************/
+body, h1, h2, h3, h4,h5,h6,p,form {margin: 0;}
+ol,ul {margin: 0;padding: 0;list-style: none;}
+body,button, input, select, textarea { font: 14px/1 'Microsoft YaHei', Helvetica, Arial, "\5b8b\4f53", sans-serif; }
+body {overflow-x: hidden;}
+h1 {font-size: 26px;}
+h2 {font-size: 24px;}
+h3 {font-size: 22px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+hr { border: 0; height: 1px;}
+table { border-collapse: collapse; border-spacing: 0;}
+img { border: 0;vertical-align: top;}
+input,select,textarea,button { border-radius: 0;outline: none;border: 0;}
+a { text-decoration: none;}
+/***************[Layout Css]**************/
+.right { float: right;}
+.relative { position: relative;}
+.absolute { position: absolute;}
+.fixed { position: fixed;}
+.hide { display:none;}
+.show { display: block;}
+/***************[index Css]**************/
+body {min-width: 1000px; background-color: #d43232;}
+.wrapper {position: relative;}
+.head {position: relative; height: 45px;background-color: #150606; margin: 0 auto;}
+.top-logo {position: absolute; left: 306px; top: 0;}
+.login {position: absolute; right: 302px; top: 0; width:148px; line-height: 45px; height: 45px;}
+.login a {color: #9b9aa7; height: 12px; line-height: 12px;}
+.login-left {padding-right: 15px; border-right: 1px solid #9b9aa7;}
+.login-right {padding-left: 15px;}
+.content {position: relative; width: 1000px; height: 1020px; margin: 0 auto; z-index: 20;}
+.logo {position: absolute; left: 74px; top: 23px;}
+.time {position: absolute; left: 607px; top: 352px; font-size: 16px; color: #621800;}
+.enter {position: absolute; left: 716px; top: 391px; width: 200px; height: 50px; background: url(../images/enter.png) no-repeat 0 0; cursor: pointer;}
+.enter:hover {background: url(../images/enter.png) no-repeat 0 -51px;}
+.award {position: absolute; left: 86px; top: 454px; background: url(../images/award.png) no-repeat; height: 391px; width: 830px;}
+.award-desc li{float: left;}
+.award-login a {position: absolute; left: 230px; top: 154px; background: url(../images/login.png) no-repeat 0 0; height: 81px; width: 174px;}
+.award-lottery a {position: absolute; left: 427px; top: 154px; background: url(../images/lottery.png) no-repeat 0 0; height: 81px; width: 174px;}
+.border {width: 200px; height: 120px; position: absolute; left: 0; top: 0;}
+.tips {width: 834px; height: 134px; position: absolute; left: 89px; top: 868px;}
+.tips p {font-size: 14px; color: #1b1b1b; height: 24px; line-height: 24px;}
+.footer {height: 84px; background-color: #150606; padding-top: 36px;}
+.contain {height: 52px; width: 780px; margin: 0 auto;}
+.contain img {float: left;}
+.contain p {display: inline-block; float: right; font-size: 12px; color: #dcdcdc; width: 622px; height: 18px; line-height: 18px;}
+.bg {position: absolute; left: 0; top: 0; z-index: 10; margin-top: 45px; width: 100%;}
+.bg>div {background-repeat: no-repeat; background-position: center top;}
+.bg1 {background: url(../images/bg/bg_01.jpg); height: 338px;}
+.bg2 {background: url(../images/bg/bg_02.jpg); height: 339px;}
+.bg3 {background: url(../images/bg/bg_03.jpg); height: 338px;}
+.marker {}
+.popup {position: fixed; left: 50%; top: 50%; width: 696px; height: 436px; margin: -218px 0 0 -348px; background: url(../images/popup.jpg) no-repeat; z-index: 40; display: none;}
+.popup-text {margin-top: 168px; margin-left: 70px; font-size: 18px; color: #ffffff;}
+.popup-text span {color: #fdd969;}
+.name {width: 180px; height: 40px; border: 1px solid #b80e0e; position: absolute; left: 157px; top: 215px;}
+.tellphone {width: 180px; height: 40px; border: 1px solid #b80e0e; position: absolute; left: 442px; top: 215px;}
+.address {width: 466px; height: 40px; border: 1px solid #b80e0e; position: absolute; left: 157px; top: 279px;}
+.submite {width: 200px; height: 49px; background: url(../images/submite.png) 0 0; position: absolute; left: 248px; top: 350px; font-size: 24px; color: #ffffff; font-weight: bold; cursor: pointer;}
+.submite span {height: 20px; position: absolute; left: 70px; top: 8px;}
+.submite:hover {background: url(../images/submite.png) 0 -50px;}
+.exit {width: 45px; height: 45px; background: url(../images/exit.png) 0 0; position: absolute; right: -14px; top: -14px;}
+.exit:hover {background: url(../images/exit.png) -50px 0;}
+.mask {position: fixed;left: 0;right: 0;top:0;bottom: 0;background: rgba(0,0,0,0.6);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); z-index: 30; display: none;}
+.popup1 {position: fixed; left: 50%; top: 50%; width: 696px; height: 436px; margin: -218px 0 0 -348px; background: url(../images/popup1.jpg) no-repeat; z-index: 40; display: none;}
+.popup1-text {margin-top: 198px; margin-left: 148px; font-size: 40px; color: #ffffff;}
+.exit1 {width: 45px; height: 45px; background: url(../images/exit.png) 0 0; position: absolute; right: -14px; top: -14px;}
+.exit1:hover {background: url(../images/exit.png) -50px 0;}
+.popup2 {position: fixed; left: 50%; top: 50%; width: 696px; height: 564px; margin: -282px 0 0 -348px; background: url(../images/popup2.jpg) no-repeat; z-index: 40; display: none;}
+.popup2-text {margin-top: 168px; margin-left: 68px; font-size: 18px; color: #ffffff;}
+.popup2-text span {color: #fdd969;}
+.code {width: 200px; height: 40px; border: 1px solid #b80e0e; position: absolute; left: 440px; top: 158px; font-size: 18px; color: #7f1d1d;}
+.exit2 {width: 45px; height: 45px; background: url(../images/exit.png) 0 0; position: absolute; right: -14px; top: -14px;}
+.exit2:hover {background: url(../images/exit.png) -50px 0;}
+.desc {width: 538px; height: 136px; margin-left: 68px; margin-top: 168px;}
+.desc li {font-size: 14px; color: #ffffff; height: 28px; line-height: 28px;}
+.title {font-size: 18px !important;}
+.copy {width: 200px; height: 49px; background: url(../images/submite.png) 0 0; position: absolute; left: 248px; top: 230px; font-size: 24px; color: #ffffff; font-weight: bold; cursor: pointer;}
+/*.copy span {height: 20px; position: absolute; left: 70px; top: 8px;}*/
+.copy:hover {background: url(../images/submite.png) 0 -50px;}
+
+.history {position: fixed; left: 50%; top: 50%; width: 696px; height: 436px; margin: -218px 0 0 -348px; background: url(../images/history.jpg) no-repeat; z-index: 40; display: none;}
+
+.cj {display:block;width:200px;height:120px; margin-right: 10px; margin-top: 13px;}
+#cj3,#cj4,#cj5 {margin-right: 0px;}
+#cj0,#cj1,#cj2,#cj3 {margin-top: 0px;}
+.cj.cur {background:url(../images/border.png) no-repeat; width: 200px;}
